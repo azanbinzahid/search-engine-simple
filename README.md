@@ -86,11 +86,9 @@ A way to break down the full text of the file into different numbered lines is t
     -> https://archive.org/stream/AAMilneWinnieThePooh/A_A_Milne_-_Winnie-the-Pooh_djvu.txt
 
     Find a few of these files and create a folder structure to test this, the following is an example of this
-
+```
     folder: MyDirectory
-
     (
-
       folder:A ('a.txt', 'b.txt', folder:E ('c.txt')),
 
       folder:B ('d.txt'),
@@ -98,19 +96,15 @@ A way to break down the full text of the file into different numbered lines is t
       folder:C ('e.txt'),
 
       folder:D ('f.txt')
-
     )
-
-Further directions
-
- 
-
-  If you can accomplish all of that in good time, why restrict yourself to offline only! You've made an indexing and searching system, the skies the limit for what you can do now! Wanna try taking this online?
+```
+## Further directions
 
  
+If you can accomplish all of that in good time, why restrict yourself to offline only! You've made an indexing and searching system, the skies the limit for what you can do now! Wanna try taking this online?  
 
-  Want to make your own command line version of Google? WITH Usable hyperlinks?!
+Want to make your own command line version of Google? WITH Usable hyperlinks?!  
 
-  What if you could find a way to create a Google Search for a certain query, send off the query online await it's results coming back and then parse the results to pull out all the result links from the search. But rather than use Google's snippets for a certain search query, we can make our own! Perhaps you could find a node library that does the same thing? That's up to you and your style of problem solving.
+What if you could find a way to create a Google Search for a certain query, send off the query online await it's results coming back and then parse the results to pull out all the result links from the search. But rather than use Google's snippets for a certain search query, we can make our own! Perhaps you could find a node library that does the same thing? That's up to you and your style of problem solving.  
 
-  You can use the HTTPS library for it's '.get' function to create GET requests to ask for webpages (create a google search query using this). Observe how the queries are created by doing a few searches yourself. Send off GET requests (using https.get) for all of those webPages extracted from the Google Search and once you get the HTML back, parse it and pick out keywords from the HTML and print the lines we find them in on command line. Restrict yourself to 3 per webpage. You can use the 'parse5' library to parse through webpage HTML content and look for 'href' tags for external links to other sites (these links are the blue links you see in a Google Result). The parse5 libary makes this a lot easier, you can pipe the result through a parser object and use it to look for href tags.
+You can use the HTTPS library for it's '.get' function to create GET requests to ask for webpages (create a google search query using this). Observe how the queries are created by doing a few searches yourself. Send off GET requests (using https.get) for all of those webPages extracted from the Google Search and once you get the HTML back, parse it and pick out keywords from the HTML and print the lines we find them in on command line. Restrict yourself to 3 per webpage. You can use the 'parse5' library to parse through webpage HTML content and look for 'href' tags for external links to other sites (these links are the blue links you see in a Google Result). The parse5 libary makes this a lot easier, you can pipe the result through a parser object and use it to look for href tags.
