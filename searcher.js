@@ -1,5 +1,3 @@
-//Azan Bin Zahid
-//20100206
 //both functions are working great
 //search function has issues only with command line argument, manuallly it is working as per required
 
